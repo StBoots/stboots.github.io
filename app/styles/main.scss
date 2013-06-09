@@ -284,13 +284,13 @@ body{
 		float:left;
 		width:(100%-$contact-form-width);
 		height:100%;
-		min-height:1280px;
+		min-height:1300px;
 	}
 	.contact-form{
 		float:right;
 		width:$contact-form-width;
 		height:100%;
-		min-height:1280px;
+		min-height:1300px;
 		display:block;
 		h2{
 			padding:120px 0;
@@ -300,20 +300,24 @@ body{
 		textarea{
 			padding:2em;
 		}
+		.textarea-wrap{
+			padding:0 0 80px 0;
+		}
 		input[type=submit]{
 			width:223px;
 			height:80px;
 			font-size:36px;
-			margin-bottom:100px;
+			margin-bottom:80px;
+		}
+		address{
+			line-height:36px;
+			font-size:24px;
+			span{
+				font-size:30px;
+			}
 		}
 	}
-	address{
-		line-height:36px;
-		font-size:24px;
-		span{
-			font-size:30px;
-		}
-	}
+
 
 } // end of media query*/
 

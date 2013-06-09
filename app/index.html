@@ -49,8 +49,8 @@
 
             <form id="awesomeForm" action="/" method="POST" data-validate="parsley">
                 <input type="text" placeholder="Name" name="name" id="contactName" data-required="true" />
-                <input type="text" placeholder="Phone Number" name="phone" id="contactPhone"/>
-                <input type="email" placeholder="Email" name="email" id="contactEmail" data-trigger="change" data-required="true"/>
+                <input type="text" placeholder="Phone Number" name="phone" id="contactPhone" data-type="phone"/>
+                <input type="email" placeholder="Email" name="email" id="contactEmail" data-required="true" data-type="email"/>
                 <div class="textarea-wrap">
                     <textarea placeholder="Message" name="message" id="contactMessage" cols="" rows="" data-required="true"></textarea>
                 </div>
