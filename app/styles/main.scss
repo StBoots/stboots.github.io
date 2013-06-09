@@ -119,6 +119,7 @@ body{
 	text-decoration:none;
 	@include transition(0.2s ease-in-out);
 	strong{
+		font-weight:normal;
 		display:block;
 		font-family: $font-moonshine;
 		text-align:center;
