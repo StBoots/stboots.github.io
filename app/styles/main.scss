@@ -7,7 +7,7 @@ $home-header-height:30%;
 $contact-form-width: 42%;
 $font-moonshine: 'moonshinerround', Impact, Arial, sans-serif;
 $font-geared-slab: 'geared_slabregular', Impact, Arial, sans-serif;
-
+$brand-orange: #a55c52;
 @mixin open-sans-bold{
 	font-family:'Open Sans', Arial, sans-serif;
 	font-weight:700;
@@ -133,13 +133,13 @@ body{
 		bottom:15px;
 		@include transition(0.2s ease-in-out);
 		strong{
-			background:lighten(#a55c52,40%);
+			background:lighten($brand-orange,40%);
 		}
 	}
 }
 
 .contact-page{
-	background:#a55c52;
+	background:$brand-orange;
 	footer{
 		p{
 			margin:0;
@@ -158,7 +158,7 @@ body{
 .contact-form{
 	text-align:center;
 	display:block;
-	background:#a55c52;
+	background:$brand-orange;
 	h2{
 		color:#fff;
 		font-size:60px;
@@ -184,7 +184,7 @@ body{
 		color:#fff;
 		&:focus{
 			background:#fff;
-			color: #a55c52;
+			color: $brand-orange;
 			@include open-sans-bold;
 		}
 	}
@@ -198,7 +198,7 @@ body{
 	}
 	input[type=submit]{
 		background:#fff;
-		color:#a55c52;
+		color:$brand-orange;
 		border:0;
 		font-family:$font-geared-slab;
 		text-transform:uppercase;
@@ -231,7 +231,7 @@ body{
 	margin:0;
 	padding:0;
 	li{
-		background: darken(#a55c52, 20%);
+		background: darken($brand-orange, 20%);
 		color:#fff;
 		padding:0.5em 0;
 		position:relative;
@@ -241,7 +241,7 @@ body{
 			display:block;
 			border-right:transparent 10px solid;
 			border-left:transparent 10px solid;
-			border-bottom:darken(#a55c52, 20%) 10px solid;
+			border-bottom:darken($brand-orange, 20%) 10px solid;
 			position:absolute;
 			height:0;
 			width:0;
