@@ -1,0 +1,9 @@
+{
+  "name": "zepto-scroll",
+  "version": "0.0.0",
+  "commit": "c69b1ec8b5431dbea2d54d989a77c7d72cafe5e6",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/suprMax/ZeptoScroll.git"
+  }
+}
