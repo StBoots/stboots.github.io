@@ -3,13 +3,13 @@
   "version": "0.0.0",
   "dependencies": {
        "zepto": "~1.0",
-       "Happy.js": "*",
-       "zepto-scroll": "*"
+       "zepto-scroll": "*",
+       "parsleyjs": "*"
   },
   "devDependencies": {
       "zepto": "~1.0",
-      "Happy.js": "*",
-      "zepto-scroll": "*"
+      "zepto-scroll": "*",
+      "parsleyjs": "*"
   }
 }
 

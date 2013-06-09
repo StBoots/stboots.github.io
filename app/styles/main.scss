@@ -140,6 +140,14 @@ body{
 
 .contact-page{
 	background:#a55c52;
+	footer{
+		p{
+			margin:0;
+			padding:1em 48px 1em;
+			text-align:right;
+
+		}
+	}
 }
 
 .contact-map{
@@ -150,6 +158,7 @@ body{
 .contact-form{
 	text-align:center;
 	display:block;
+	background:#a55c52;
 	h2{
 		color:#fff;
 		font-size:60px;
@@ -158,11 +167,14 @@ body{
 		margin:0;
 		padding:60px 0;
 	}
+	form{
+		margin: 0 4px;
+		display:block;
+	}
 	input[type=text],
 	input[type=email],
 	textarea{
 		width:100%;
-		margin-left:4px;
 		border:none;
 		border-bottom:1px dashed #fff;
 		text-align:center;
@@ -176,10 +188,13 @@ body{
 			@include open-sans-bold;
 		}
 	}
+	.textarea-wrap{
+		padding:0 0 40px 0;
+	}
 	textarea{
 		padding:1.5em 2em;
-		margin-bottom:80px;
 		resize:none;
+		margin-left:0;
 	}
 	input[type=submit]{
 		background:#fff;
@@ -187,19 +202,20 @@ body{
 		border:0;
 		font-family:$font-geared-slab;
 		text-transform:uppercase;
-		width:223px;
-		height:80px;
-		font-size:36px;
+		width:150px;
+		height:60px;
+		font-size:24px;
+		margin-bottom:50px;
 	}
 
 	address{
 		font-style:normal;
 		font-family:$font-geared-slab;
-		line-height:36px;
-		font-size:24px;
+		line-height:24px;
+		font-size:18px;
 		color:#fff;
 		span{
-			font-size:30px;
+			font-size:20px;
 			display:block;
 		}
 		a{
@@ -209,6 +225,34 @@ body{
 		}
 	}
 }
+
+.parsley-error-list{
+	list-style: none;
+	margin:0;
+	padding:0;
+	li{
+		background: darken(#a55c52, 20%);
+		color:#fff;
+		padding:0.5em 0;
+		position:relative;
+		@include open-sans-light;
+		&:after{
+			content: " ";
+			display:block;
+			border-right:transparent 10px solid;
+			border-left:transparent 10px solid;
+			border-bottom:darken(#a55c52, 20%) 10px solid;
+			position:absolute;
+			height:0;
+			width:0;
+			top:-10px;
+			left:50%;
+			margin-left:-5px;
+		}
+	}
+}
+
+
 
 @media only screen and (min-width: 400px) {
 
@@ -240,13 +284,13 @@ body{
 		float:left;
 		width:(100%-$contact-form-width);
 		height:100%;
-		min-height:1000px;
+		min-height:1280px;
 	}
 	.contact-form{
 		float:right;
 		width:$contact-form-width;
 		height:100%;
-		min-height:1000px;
+		min-height:1280px;
 		display:block;
 		h2{
 			padding:120px 0;
@@ -256,7 +300,19 @@ body{
 		textarea{
 			padding:2em;
 		}
-
+		input[type=submit]{
+			width:223px;
+			height:80px;
+			font-size:36px;
+			margin-bottom:100px;
+		}
+	}
+	address{
+		line-height:36px;
+		font-size:24px;
+		span{
+			font-size:30px;
+		}
 	}
 
 } // end of media query*/
