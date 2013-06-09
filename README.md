@@ -24,4 +24,4 @@ grunt build
 
 ##Github for pages
 
-In order to get the site working live, please follow (this guide.)[https://github.com/yeoman/yeoman/wiki/Deployment]
+In order to get the site working live, please follow: https://github.com/yeoman/yeoman/wiki/Deployment
