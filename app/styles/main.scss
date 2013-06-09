@@ -145,7 +145,6 @@ body{
 			margin:0;
 			padding:1em 48px 1em;
 			text-align:right;
-
 		}
 	}
 }
@@ -196,6 +195,27 @@ body{
 		resize:none;
 		margin-left:0;
 	}
+	label{
+		display:none;
+		@include open-sans-bold;
+		padding:0.5em 0;
+		color: #fff;
+		position:relative;
+		background:darken($brand-orange, 20%);
+		&:after{
+			content: " ";
+			display:block;
+			border-right:transparent 10px solid;
+			border-left:transparent 10px solid;
+			border-top:darken($brand-orange, 20%) 10px solid;
+			position:absolute;
+			height:0;
+			width:0;
+			bottom:-10px;
+			left:50%;
+			margin-left:-5px;
+		}
+	}
 	input[type=submit]{
 		background:#fff;
 		color:$brand-orange;
@@ -226,6 +246,16 @@ body{
 	}
 }
 
+.ie{
+	.contact-form{
+		label{
+			display:block;
+
+		}
+	}
+
+}
+
 .parsley-error-list{
 	list-style: none;
 	margin:0;
@@ -253,15 +283,31 @@ body{
 }
 
 
-
 @media only screen and (min-width: 400px) {
+	.home-welcome{
+		height:(100%-$home-header-height);
+		min-height: 580px;
+		h1{
+			font-size:3.5rem;
+			line-height:6rem;
+			margin-top:80px;
+			span{
+				font-size:7rem;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 600px) {
 
 	.home-page{
 		height:100%;
 	}
+
 	.home-header{
 		height:$home-header-height;
 	}
+
 	.home-welcome{
 		height:(100%-$home-header-height);
 		min-height: 580px;
