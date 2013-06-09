@@ -266,8 +266,8 @@ module.exports = function (grunt) {
                             '*.{ico,txt}',
                             '.htaccess',
                             'components/**/*',
-                            'img/{,*/}*.{gif,webp}',
-                            'styles/fonts/*'
+                            'img/*',
+                            'fonts/*'
                         ]
                     }
                 ]
@@ -291,7 +291,7 @@ module.exports = function (grunt) {
         'clean:dist',
         'jshint',
         //'test',
-        'coffee',
+        'coffee:dist',
         'compass:dist',
         'useminPrepare',
         'concat',
