@@ -1,6 +1,6 @@
 {
-  "name": "st-boots",
-  "version": "0.0.0",
+  "name": "st-boots-teaser",
+  "version": "0.0.2",
   "dependencies": {
        "zepto": "~1.0",
        "zepto-scroll": "*",
