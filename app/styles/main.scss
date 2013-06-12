@@ -201,13 +201,10 @@ body {
         &:focus {
             background : #ffffff;
             color      : $brand-orange;
+            outline    : none;
             @include open-sans-bold;
             @include transition(0.1s ease-in);
         }
-    }
-
-    .textarea-wrap {
-        padding : 0 0 40px 0;
     }
 
     textarea {
@@ -248,6 +245,7 @@ body {
         width          : 150px;
         height         : 60px;
         font-size      : 24px;
+        margin-top     : 40px;
         margin-bottom  : 50px;
     }
 
@@ -307,10 +305,14 @@ body {
     }
 }
 
+.hide {
+    display: none;
+}
+
 @media only screen and (min-width: 400px) {
     .home-welcome {
         height     : (100%-$home-header-height);
-        min-height : 580px;
+        min-height : 540px;
 
         h1 {
             font-size   : 3.5rem;
@@ -335,7 +337,7 @@ body {
 
     .home-welcome {
         height     : (100%-$home-header-height);
-        min-height : 580px;
+        min-height : 540px;
 
         h1 {
             font-size   : 4.5rem;
@@ -357,18 +359,18 @@ body {
         float      : left;
         width      : (100%-$contact-form-width);
         height     : 100%;
-        min-height : 1300px;
+        min-height : 900px;
     }
 
     .contact-form {
         float      : right;
         width      : $contact-form-width;
         height     : 100%;
-        min-height : 1300px;
+        min-height : 900px;
         display    : block;
 
         h2 {
-            padding : 120px 0;
+            padding : 120px 0 60px;
         }
 
         input[type=text],
@@ -386,6 +388,7 @@ body {
             width         : 223px;
             height        : 80px;
             font-size     : 36px;
+            margin-top    : 80px;
             margin-bottom : 80px;
         }
         address {
