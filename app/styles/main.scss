@@ -197,20 +197,25 @@ body {
         background    : none;
         padding       : 1em;
         color         : #ffffff;
+
         &:focus {
             background : #ffffff;
             color      : $brand-orange;
             @include open-sans-bold;
+            @include transition(0.1s ease-in);
         }
     }
+    
     .textarea-wrap {
         padding : 0 0 40px 0;
     }
+
     textarea {
         padding     : 1.5em 2em;
         resize      : none;
         margin-left : 0;
     }
+
     label {
         display    : none;
         @include open-sans-bold;
@@ -218,6 +223,7 @@ body {
         color      : #ffffff;
         position   : relative;
         background : darken($brand-orange, 20%);
+
         &:after {
             content      : " ";
             display      : block;
@@ -232,6 +238,7 @@ body {
             margin-left  : -5px;
         }
     }
+
     input[type=submit] {
         background     : #ffffff;
         color          : $brand-orange;
