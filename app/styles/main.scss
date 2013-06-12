@@ -72,7 +72,6 @@ body, html {
 html { font-size : 100%; overflow-y : scroll; -webkit-text-size-adjust : 100%; -ms-text-size-adjust : 100%; }
 
 body {
-    @include transition(1s);
     position : relative;
 }
 
@@ -100,10 +99,12 @@ body {
 }
 
 .home-welcome {
+    @include background-size(cover);
     min-height : 370px;
-    background : url(../img/st-boots-background.jpg) no-repeat 50% 0;
+    background : url(../img/st-boots-background.jpg) no-repeat center;
     overflow   : hidden;
     position   : relative;
+
     h1 {
         font-family : $font-moonshine;
         font-weight : normal;
@@ -112,6 +113,7 @@ body {
         color       : #ffffff;
         font-size   : 2.5rem;
         line-height : 4.25rem;
+
         span {
             display   : block;
             font-size : 4.5rem;
@@ -273,12 +275,15 @@ body {
     list-style : none;
     margin     : 0;
     padding    : 0;
+
     li {
         background : darken($brand-orange, 20%);
         color      : #ffffff;
         padding    : 0.5em 0;
         position   : relative;
+
         @include open-sans-light;
+
         &:after {
             content       : " ";
             display       : block;
@@ -299,10 +304,12 @@ body {
     .home-welcome {
         height     : (100%-$home-header-height);
         min-height : 580px;
+
         h1 {
             font-size   : 3.5rem;
             line-height : 6rem;
             margin-top  : 80px;
+
             span {
                 font-size : 7rem;
             }
@@ -311,7 +318,6 @@ body {
 }
 
 @media only screen and (min-width: 600px) {
-
     .home-page {
         height : 100%;
     }
@@ -323,10 +329,12 @@ body {
     .home-welcome {
         height     : (100%-$home-header-height);
         min-height : 580px;
+
         h1 {
             font-size   : 4.5rem;
             line-height : 8.75rem;
             margin-top  : 80px;
+
             span {
                 font-size : 9rem;
             }
@@ -344,23 +352,29 @@ body {
         height     : 100%;
         min-height : 1300px;
     }
+
     .contact-form {
         float      : right;
         width      : $contact-form-width;
         height     : 100%;
         min-height : 1300px;
         display    : block;
+
         h2 {
             padding : 120px 0;
         }
+
         input[type=text],
         input[type=email],
+
         textarea {
             padding : 2em;
         }
+
         .textarea-wrap {
             padding : 0 0 80px 0;
         }
+
         input[type=submit] {
             width         : 223px;
             height        : 80px;
