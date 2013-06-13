@@ -1,0 +1,1 @@
+!function(){"use strict";Zepto(function(a){var b;return b={bindElements:function(){return a(".btn-contact").click(function(b){return b.preventDefault(),a.scrollTo(a("#contact").offset().top,1e3)})}},b.bindElements()})}.call(this);
